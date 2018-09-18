@@ -17,10 +17,10 @@
 	<div id="box" class="box">bbb</div>
 	<script>
 	var t=0;
-	        box.addEventListener("touchstart",(e)=>{
+	        document.addEventListener("touchstart",(e)=>{
 	        	 box.innerHTML=e.touches.length;
 	        	
-	        	box.addEventListener("touchmove",()=>{
+	        	document.addEventListener("touchmove",()=>{
 	        		console.log("touch move");
 	        		box.innerHTML=e.touches.length;
 	        	})
